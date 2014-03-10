@@ -1,48 +1,73 @@
 Homework 3 - Code the Change
 ============================
 
+
 Question #1:
 ============
+CREATE TABLE students
+(
+	ID int,
+	Name varchar(255),
+	Birthday varchar(255),
+	GPA float,
+	Grad int
 
-
+)
 
 Question #2:
 ============
-
+INSERT INTO students (Name, Birthday, GPA, Grad)
+VALUES ( "Anderson", "1987-­10-­22", 3.9, 2014);
+INSERT INTO students (Name, Birthday, GPA, Grad)
+VALUES ("Jones", "1990-­4­-16", 2.4, 2016)
+INSERT INTO students (Name, Birthday, GPA, Grad)
+VALUES ("Hernandez", "1989­-8-­12", 3.1, 2015)
+INSERT INTO students (Name, Birthday, GPA, Grad)
+VALUES ("Chen", "1990­-2-­4", 3.2, 2015)
 
 
 Question #3:
 ============
-
+DELETE FROM students
+WHERE Name="Anderson"
 
 
 Question #4:
 ============
+SELECT * FROM students;
 
 
 
 Question #5:
 ============
+SELECT Name, GPA FROM students;
 
 
 
 Question #6:
 ============
-
+SELECT Name, GPA
+FROM students
+WHERE GPA > 3.0
 
 
 Question #7:
 ============
-
+SELECT Name, GPA
+FROM students
+WHERE GPA > 3.0
+ORDER BY GPA, ASC
 
 
 Question #8:
 ============
-
+UPDATE students
+SET GPA=2.6
+WHERE Name="Jones"
 
 
 Question #9:
 ============
-
+DROP TABLE students
 
 
